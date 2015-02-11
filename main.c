@@ -3,7 +3,20 @@
 
 #include "intLinkedList.h"
 
+struct s_nodo{
+    int key ;
+    char scelta[20];
+    struct s_nodo *next;
+    int tempo;
+}; 
+typedef struct s_nodo nodo;
+typedef struct nodo *puntanodo;
+ puntanodo ptesta;
+    puntanodo pnodo;
+
 int main(int argc, char** argv) {
+    
+    
     intLinkedList lista = NULL;
     int key;
     char scelta = 's';
@@ -13,7 +26,8 @@ int main(int argc, char** argv) {
         scanf("%d", &key);
         
         lista = insertAtBeginning(lista, key);
-        if(lista == NULL) {
+        if(lista =! NULL)
+        { 
             fprintf(stderr, "Impossibile aggiungere un nuovo elemento\n");
             exit(-1);
         }

@@ -4,14 +4,18 @@
 #include "intLinkedList.h"
 
 
+
 /*
  * Restituisce la lunghezza della lista.
  */
 int size(intLinkedList list) {
     int r=0;
-    
+    while(list!=NULL)
+    {
+        r++;
+        list=list->next;
     // TODO Implementa il corpo della funzione
-    
+    }
     return r;
 }
 
@@ -20,11 +24,11 @@ int size(intLinkedList list) {
  * Aggiunge un nuovo elemento all'inizio della lista.
  * Restituisce il puntatore aggiornato al primo elemento.
  * Restituisce NULL in caso di errore.
- */
+*/
 intLinkedList insertAtBeginning(intLinkedList list, int newKey) {
     
     // TODO Implementa il corpo della funzione
-    
+    temp=intLinkedList*
     return list;
 }
 
